@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Apparel - Coming Soon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            display: flex;
+            min-height: 100vh;
+            background-color: #fff;
+        }
+        
+        .left-side {
+            flex: 1;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .right-side {
+            flex: 1;
+            background-image: url('https://styledoctors.com/wp-content/uploads/2021/12/womens-personal-stylist-hourly-makeover-style-doctors-2.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .logo {
+            margin-bottom: 80px;
+        }
+        
+        .logo-text {
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 1px;
+            color: #333;
+        }
+        
+        .logo-circle {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            border: 2px solid #f8a4b9;
+            border-radius: 50%;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        
+        .content {
+            max-width: 450px;
+        }
+        
+        h1 {
+            font-size: 60px;
+            letter-spacing: 10px;
+            margin-bottom: 30px;
+            font-weight: 300;
+            line-height: 1.1;
+        }
+        
+        h1 .highlight {
+            color: #222;
+            font-weight: 600;
+        }
+        
+        h1 .light {
+            color: #f8a4b9;
+        }
+        
+        p {
+            color: #999;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+        
+        .email-form {
+            position: relative;
+            width: 100%;
+        }
+        
+        input[type="email"] {
+            width: 100%;
+            padding: 15px 20px;
+            border: 1px solid #f8a4b9;
+            border-radius: 50px;
+            outline: none;
+            font-size: 16px;
+            color: #333;
+        }
+        
+        input[type="email"]::placeholder {
+            color: #ddd;
+        }
+        
+        button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 80px;
+            border: none;
+            background: linear-gradient(135deg, #f8bfcd, #f8a4b9);
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(248, 164, 185, 0.3);
+        }
+        
+        button:hover {
+            background: linear-gradient(135deg, #f8a4b9, #f8bfcd);
+        }
+        
+        button:after {
+            content: ">";
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+            
+            .left-side {
+                order: 2;
+                padding: 30px;
+            }
+            
+            .right-side {
+                order: 1;
+                height: 300px;
+            }
+            
+            .logo {
+                margin-bottom: 40px;
+            }
+            
+            h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="left-side">
+        <div class="logo">
+            <span class="logo-circle"></span>
+            <span class="logo-text">BASE APPAREL</span>
+        </div>
+        
+        <div class="content">
+            <h1>
+                <span class="light">WE'RE</span><br>
+                <span class="highlight">COMING</span><br>
+                <span class="highlight">SOON</span>
+            </h1>
+            
+            <p>
+                Hello fellow shoppers! We're currently building our new fashion store. 
+                Add your email below to stay up-to-date with announcements and our launch deals.
+            </p>
+            
+            <form class="email-form">
+                <input type="email" placeholder="Email Address" required>
+                <button type="submit"></button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="right-side"></div>
+</body>
+</html>
